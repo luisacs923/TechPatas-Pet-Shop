@@ -7,9 +7,14 @@
     <title>Cadastro Cliente - TechPatas Petshop</title>
 </head>
 <body>
-    
-    <h1>Cadastro de Cliente e Animal</h1>
-    <form action="processar_cadastro.php" method="post">
+    <header>
+        <div class="container">
+            <img class="logomarca" src="./imagens/logo_TechPatas.png" alt="logo TechPatas">
+            <img class="banner_patinhas" src="./imagens/banner_TechPatas.png" alt="">
+        </div>
+    </header>
+    <h1 id="cadastro_Titulo">Cadastro de cliente e do animal</h1>
+    <form method="post">
         <h2>Dados do Cliente</h2>
         <!-- Nome Completo -->
         <label for="nome_completo">Nome Completo:</label>
@@ -26,11 +31,11 @@
         <input type="date" id="data_nascimento" name="data_nascimento"><br>
 
         <!-- Endereço de Email -->
-        <label for="email">Endereço de Email:</label>
+        <label for="email">Endereço de email:</label>
         <input type="email" id="email" name="email"><br>
 
         <!-- Número de Telefone -->
-        <label for="telefone">Número de Telefone:</label>
+        <label for="telefone">Telefone para contato:</label>
         <input type="tel" id="telefone" name="telefone"><br>
 
         <!-- Endereço -->
@@ -87,6 +92,7 @@
             <option value="credito">Cartão de Crédito</option>
             <option value="debito">Cartão de Débito</option>
             <option value="dinheiro">Dinheiro</option>
+            <option value="pix">Pix</option>
         </select><br>
 
         <!-- Botão de Envio -->

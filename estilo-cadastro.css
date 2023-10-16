@@ -6,52 +6,25 @@
     border: 0;
 }
 
+/* Logo e banner */
+.container{
+    display: flex;
+    flex: row wrap;
+}
+
+#banner_patinhas img {
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     background-color: #B8B0B8;
     font-family: 'Poppins', sans-serif;
     color: #464646;
+    overflow-x: hidden; /* remove scroll pros lados */
 }
 
-#banner_inicial {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-#logomarca {
-    max-width: 70%;
-    justify-self: center;
-    align-self: center;
-    grid-row: 1 / 4;
-    grid-column: 1 / 2;
-}
-
-#banner_patinhas {
-    max-width: 100%;
-    grid-row: 1 / 4;
-    grid-column: 1 / 5;
-}
-
-#menu {
-    background-color: #470047;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-a {
-    text-decoration: none;
-    font-weight: 700;
-    color: #B8B0B8;
-}
-
-footer {
-    text-align: center;
-    padding: 2%;
-    font-size: small;
-}
-
-/* Estilos para o formulário */
+/* Formulário */
 form {
     background-color: #fff;
     padding: 20px;
@@ -63,9 +36,14 @@ form {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 35px;
     margin-bottom: 20px;
-    
+    text-align: center;
+    padding-top: 5px;
+}
+
+#cadastro_Titulo{
+    justify-content: center;
 }
 
 label {
@@ -78,7 +56,7 @@ input[type="email"],
 input[type="date"],
 select,
 textarea {
-    width: 100%;
+    width: 96%;
     padding: 10px;
     margin: 5px 0;
     border: 1px solid #ccc;
@@ -87,7 +65,7 @@ textarea {
 }
 
 textarea {
-    height: 100px;
+    height: 50px;
 }
 
 input[type="radio"] {
@@ -106,6 +84,7 @@ input[type="submit"] {
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
+    align-content: center;
 }
 
 input[type="submit"]:hover {
