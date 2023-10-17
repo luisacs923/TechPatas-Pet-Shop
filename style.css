@@ -52,7 +52,9 @@ main {
   height: 300px;
   padding-left: 2%;
 }
-
+figcaption{
+  font-size: small;
+}
 figure img{
   max-width: 110%;
   border-radius: 10px;
