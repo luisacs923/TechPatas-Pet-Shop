@@ -50,9 +50,6 @@ h1 {
   margin-bottom: 20px;
   text-align: center;
   padding-top: 5px;
-}
-
-#cadastro_Titulo {
   justify-content: center;
   margin: 2%;
 }
@@ -102,9 +99,35 @@ input[type="submit"]:hover {
   background-color: #6c066c;
 }
 
+/* Rodapé */
 
 footer {
-    text-align: center;
-    padding: 2%;
-    font-size: small;
-  }
+  text-align: center;
+  padding: 2%;
+  font-size: small;
+}
+
+/* Formulário de Agendamento */
+
+button {
+  background-color: #470047;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  align-content: center;
+}
+
+button:hover {
+    background-color: #6c066c;
+}
+
+#botaoLimpar {
+    background-color: #464646;
+}
+
+#botaoLimpar:hover {
+    background-color: #646464;
+}
