@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,800;1,300;1,400;1,600;1,800&display=swap");
 
 * {
-  margin: 0;
+  margin-left: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -10,6 +10,12 @@ body {
   background-color: #b8b0b8;
   font-family: "Poppins", sans-serif;
   color: #464646;
+}
+
+main {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 2%;
 }
 
 #banner_inicial {
@@ -32,11 +38,33 @@ body {
   grid-column: 1 / 5;
 }
 
-#menu {
-  background-color: #470047;
+.imagem-principal{
+  max-width: 100%;
+}
+
+.servicos{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  background-color: #470047;
+  color:#b8b0b8;
+  align-items: center;
+  height: 300px;
+}
+
+figure img{
+  max-width: 100%;
+  border-radius: 10px;
+}
+.navegador{
+  background-color: #470047;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 5%;
+  margin-right: 10%;
 }
 
 a {
@@ -47,8 +75,30 @@ a {
 
 footer {
   text-align: center;
-  padding: 2%;
+  padding: .5%;
   font-size: small;
+  background-color: #dbdbdb;
+}
+.cont{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contato{
+  display: flex;
+  flex-direction: column;
+  max-width: 20%;
+}
+.botoes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.botoes a{
+  transition: transform .2s;
+}
+.botoes a:hover{
+  transform: scale(1.5);
 }
 
 /* Estilo da página de login */
