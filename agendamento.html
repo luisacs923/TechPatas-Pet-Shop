@@ -39,51 +39,49 @@
     <h1>Agendamento de Serviços</h1>
 
     <form id="formularioAgendamento">
-      <label for="servico"
-        >Tipo de Serviço:
-        <select id="servico" name="servico">
+      <label for="servico" class="itensFormAgendamento">
+        Tipo de Serviço: 
+        <select id="servico" name="servico" required="required" class="itemObrigatorio">
+          <option value="">Selecione um serviço</option>
           <option value="banho">Banho e Tosa</option>
           <option value="consulta">Consulta Veterinária</option>
           <option value="castrar">Castração</option>
           <option value="hospedagem">Hospedagem</option>
-          <option></option>
+          <option value="spacanino">SPA Canino</option>
         </select>
       </label>
 
-      <label for="data">
+      <label for="data" class="itensFormAgendamento">
         Selecione a data:
-        <input
-          id="data"
-          type="date"
-          min="2023-10-17"
-          max="2023-12-30"
-          step=""
-        />
+        <input id="data" type="date" min="2023-10-17" max="2023-12-30" class="itemObrigatorio" />
       </label>
 
-      <label for="hora"
-        >Selecione o horário:
-        <input id="hora" type="time" />
+      <label for="hora" class="itensFormAgendamento">
+        Selecione o horário:
+        <input id="hora" type="time" min="09:00" max="18:00" required class="itemObrigatorio"/>
+        <p>Agendamento das 09:00 às 18:00.</p>
       </label>
 
-      <label for="adicional"
-        >Observações adicionais:
-        <textarea id="adicional" maxlength="500"></textarea>
+      <label for="info_adicional" class="itensFormAgendamento">
+        Informações adicionais:
+        <textarea id="info_adicional" name="info_adicional" rows="4" cols="50" placeholder="Digite especificações necessárias sobre seu animal ou agendamento"></textarea>
       </label>
 
-      <label for="lembrete">
+      <label for="lembrete" class="itensFormAgendamento">
         <input id="lembrete" type="checkbox" />
         Desejo receber lembrete no dia agendado.
       </label>
 
-      <button id="botaoLimpar">Limpar dados</button>
-      <button id="botaoEnviar">Enviar</button>
+      <button id="botaoLimpar" type="reset">Limpar dados</button>
+      <button id="botaoEnviar" type="submit" onclick="agendarServiço()">Enviar</button>
     </form>
 
     <footer>
-      <p>
-        Atividade realizada para cursos de formação em Front End, Softex Recife.
-      </p>
+      <a id="linkRodape" href="index.html">Atividade realizada para cursos de formação em Front End, Softex Recife.</a>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
+
+

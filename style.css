@@ -45,11 +45,18 @@ a {
   color: #b8b0b8;
 }
 
-footer {
-  text-align: center;
-  padding: 2%;
-  font-size: small;
+footer{
+  display: flex;
+  justify-content: center;
 }
+
+#linkRodape {
+  padding: 2%;
+  font-size: smaller;
+  font-weight: 400;
+  color: #464646;
+}
+
 
 /* Estilo da página de login */
 
