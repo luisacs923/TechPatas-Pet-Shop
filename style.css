@@ -50,12 +50,18 @@ main {
   color:#b8b0b8;
   align-items: center;
   height: 300px;
+  padding-left: 2%;
 }
 
 figure img{
-  max-width: 100%;
+  max-width: 110%;
   border-radius: 10px;
+  transition: transform .2s;
 }
+figure img:hover{
+  transform: scale(1.15);
+}
+
 .navegador{
   background-color: #470047;
 }
