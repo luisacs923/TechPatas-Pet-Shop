@@ -65,23 +65,29 @@ form {
 }
 
 input {
-    margin: 1%;
-    width: 200px;
-    border-radius: 4px;
-    padding: 4px;
+  margin: 1%;
+  width: 200px;
+  border-radius: 4px;
+  padding: 4px;
 }
 
 button {
-  height: 26px;
-  width: 20%;
   background-color: #470047;
-  color: white;
-  border: 0;
-  margin: 3%;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
   border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  align-content: center;
+  margin: 3%;
+}
+
+button:hover {
+  background-color: #6c066c;
 }
 
 h1 {
-    margin: 3%;
-    color: #470047;
+  margin: 3%;
+  color: #470047;
 }
